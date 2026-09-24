@@ -1,0 +1,19 @@
+﻿.feed-container { padding: 24px; }
+.masonry-grid { column-count: 4; column-gap: 16px; }
+@media (max-width: 1200px) { .masonry-grid { column-count: 3; } }
+@media (max-width: 800px)  { .masonry-grid { column-count: 2; } }
+@media (max-width: 500px)  { .masonry-grid { column-count: 1; } }
+
+.pin-card { break-inside: avoid; margin-bottom: 16px; border-radius: 16px; overflow: hidden; background: #fff; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: 1px solid #f0f0f0; }
+.pin-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+.pin-media { position: relative; width: 100%; }
+.pin-media img { width: 100%; display: block; border-radius: 16px 16px 0 0; }
+.pin-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.25); display: flex; justify-content: flex-end; padding: 12px; opacity: 0; transition: opacity 0.2s; border-radius: 16px 16px 0 0; }
+.pin-card:hover .pin-overlay { opacity: 1; }
+.btn-save { background-color: var(--primary); color: white; border: none; padding: 8px 16px; border-radius: 20px; font-weight: bold; cursor: pointer; height: fit-content; }
+
+.pin-info { padding: 12px; }
+.pin-info h3 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.pin-meta { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+.badge-pass { background-color: #e6f4ea; color: #137333; padding: 3px 8px; border-radius: 12px; font-weight: bold; font-size: 11px; }
+.author { color: #767676; }

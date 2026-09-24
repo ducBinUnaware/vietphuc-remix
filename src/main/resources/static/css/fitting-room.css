@@ -1,0 +1,22 @@
+﻿.fitting-container { display: flex; gap: 24px; padding: 24px; max-width: 1400px; margin: 0 auto; width: 100%; }
+.wardrobe-picker { flex: 1.2; background: #fff; border-radius: 20px; padding: 20px; border: 1px solid #e9e9e9; }
+.prompt-studio { flex: 1; background: #fafafa; border-radius: 20px; padding: 20px; border: 1px solid #e9e9e9; display: flex; flex-direction: column; gap: 16px; }
+
+.section-header h2 { font-size: 20px; font-weight: 700; }
+.subtitle { font-size: 13px; color: #767676; margin-top: 4px; margin-bottom: 16px; }
+
+.items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; max-height: 500px; overflow-y: auto; padding-right: 4px; }
+.item-card { border: 2px solid #e9e9e9; border-radius: 12px; padding: 8px; text-align: center; cursor: pointer; transition: 0.2s; background: #fff; }
+.item-card.selected { border-color: var(--primary); background-color: #ffe6e9; }
+.item-card img { width: 100%; height: 90px; object-fit: cover; border-radius: 8px; }
+.item-card p { font-size: 12px; font-weight: 600; margin-top: 6px; }
+
+.tags-container { display: flex; flex-wrap: wrap; gap: 6px; min-height: 40px; padding: 8px 12px; background: #fff; border-radius: 12px; border: 1px solid #e0e0e0; align-items: center; }
+.tag-badge { background: var(--primary); color: #fff; padding: 4px 10px; border-radius: 16px; font-size: 12px; font-weight: 600; }
+
+.form-group label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; margin-top: 10px; }
+.form-group input, .form-group textarea { width: 100%; padding: 10px 14px; border-radius: 12px; border: 1px solid #ccc; font-size: 13px; outline: none; }
+
+.btn-submit-prompt { width: 100%; margin-top: 12px; padding: 12px; background: var(--primary); color: #fff; border: none; border-radius: 24px; font-size: 14px; font-weight: 700; cursor: pointer; }
+.ai-response-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 16px; padding: 16px; margin-top: 10px; }
+.btn-publish { width: 100%; margin-top: 12px; padding: 10px; background: #111; color: #fff; border: none; border-radius: 20px; font-weight: 700; cursor: pointer; }

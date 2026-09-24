@@ -1,0 +1,26 @@
+[
+  {
+    "id": "item-01",
+    "name": "Áo Nhật Bình Đỏ",
+    "category": "Ao",
+    "image": "/images/costumes/nhat_binh.jpg"
+  },
+  {
+    "id": "item-02",
+    "name": "Áo Ngũ Thân Tay Chẽn",
+    "category": "Ao",
+    "image": "/images/costumes/ngu_than.jpg"
+  },
+  {
+    "id": "item-03",
+    "name": "Quần Lụa Trắng Tradition",
+    "category": "Quan",
+    "image": "/images/costumes/ngu_than.jpg"
+  },
+  {
+    "id": "item-04",
+    "name": "Guốc Mộc Sài Gòn",
+    "category": "PhuKien",
+    "image": "/images/costumes/nhat_binh.jpg"
+  }
+]

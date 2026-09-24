@@ -49,5 +49,5 @@ ehthumbs.db
 Thumbs.db
 
 # Sensitive local config (Nơi chứa Gemini API Key)
-application-local.properties
+application.properties
 .env

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tủ Đồ & AI Studio - Audition Viet Phuc Remix</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/fitting-room.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="nav-icons">
+            <a href="../index.html" class="logo">💃</a>
+            <a href="../index.html" class="nav-icon" title="Trang chủ">🏠</a>
+            <a href="wardrobe.html" class="nav-icon active" title="Tủ đồ & AI Studio">👗</a>
+            <a href="profile.html" class="nav-icon" title="Trang cá nhân">📌</a>
+        </div>
+        <a href="login.html" class="nav-icon" title="Đăng nhập">⚙️</a>
+    </nav>
+
+    <div class="app-content">
+        <header class="topbar">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Tìm item trong tủ đồ...">
+            </div>
+            <a href="profile.html" class="user-avatar">B</a>
+        </header>
+
+        <main class="fitting-container">
+            <section class="wardrobe-picker">
+                <div class="section-header">
+                    <h2>👗 Tủ Đồ Việt Phục</h2>
+                    <p class="subtitle">Bấm chọn trang phục để phối đồ</p>
+                </div>
+                <div class="items-grid" id="wardrobe-items-list"></div>
+            </section>
+
+            <section class="prompt-studio">
+                <div class="section-header">
+                    <h2>✨ AI Prompt Studio</h2>
+                    <p class="subtitle">Gửi prompt cho Chị Gatekeeper thẩm định</p>
+                </div>
+
+                <div class="tags-container" id="selected-tags">
+                    <span style="color:#888; font-size:12px;">Chưa chọn món nào...</span>
+                </div>
+
+                <div class="form-group">
+                    <label>🎯 Sự kiện / Bối cảnh:</label>
+                    <input type="text" id="event-input" placeholder="VD: Dự tiệc cưới, Dạo phố Bùi Viện...">
+                    <label>📝 Ghi chú cho AI Stylist:</label>
+                    <textarea id="custom-prompt" rows="2" placeholder="Nhận xét xì-tin Gen Z..."></textarea>
+                </div>
+
+                <button class="btn-submit-prompt" onclick="submitToAI()">🚀 Gửi Thẩm Định</button>
+
+                <div class="ai-response-card" id="ai-card" style="display:none;">
+                    <div id="ai-feedback"></div>
+                    <button class="btn-publish" id="btn-pub" style="display:none;" onclick="publishPost()">📌 Đăng Bài Lên Feed</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../js/fitting-room.js"></script>
+</body>
+</html>
